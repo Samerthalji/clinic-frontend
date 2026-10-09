@@ -1,0 +1,155 @@
+:root{--ink:#0f2f2b;--side:#0f3d38;--brand:#0e776f;--mint:#d7ebe6;--bg:#f6f8f7;--line:#e3e9e7;--mute:#5d726e;--red:#b23b3b}
+*{box-sizing:border-box;margin:0}
+body{font-family:Tajawal,Tahoma,sans-serif;background:var(--bg);color:var(--ink);font-size:15px;font-variant-numeric:lining-nums}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+.btn{border:1px solid var(--brand);background:var(--brand);color:#fff;padding:9px 18px;border-radius:10px;cursor:pointer;font-weight:700}
+.btn.out{background:#fff;color:var(--brand)}
+.btn.red{background:#fff;color:var(--red);border-color:var(--red);font-weight:500}
+.btn.gray{background:#fff;color:var(--ink);border-color:var(--line);font-weight:500}
+.btn.sm{padding:6px 14px}.btn.full{width:100%;padding:13px}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+label{display:block;font-size:13px;margin:14px 0 6px}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid #cfdad7;border-radius:10px;background:#fff}
+.top{display:flex;align-items:center;justify-content:space-between;padding:16px 64px;border-bottom:1px solid var(--line)}
+.logo{font-weight:800;font-size:18px;display:flex;gap:10px;align-items:center}
+.logo i{width:26px;height:26px;border-radius:8px;background:var(--brand)}
+.top nav{display:flex;gap:28px;color:var(--mute)}.top .acts{display:flex;gap:10px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:56px 64px 32px}
+.hero h1{font-size:56px;line-height:1.3;font-weight:800}
+.hero h1 b{color:var(--brand)}
+.hero p{color:var(--mute);margin:16px 0 28px;font-size:17px}
+.hero .row{display:flex;gap:12px}
+.pic{background:var(--mint);border-radius:28px;height:320px;position:relative;display:grid;place-items:center;color:var(--mute)}
+.pic .next{position:absolute;bottom:20px;left:20px;background:#fff;border-radius:14px;padding:12px 18px;box-shadow:0 6px 20px #0f3d3826}
+.pic small{display:block;color:var(--mute);font-size:12px}
+.wrap{padding:0 64px 64px}
+.chips{display:flex;gap:10px;margin:24px 0;flex-wrap:wrap}
+.chip{background:var(--mint);border:0;border-radius:99px;padding:9px 20px;cursor:pointer;font-weight:700}
+.chip.on{background:var(--brand);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.doc{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;transition:box-shadow .2s,transform .2s}
+.doc:hover{box-shadow:0 8px 24px #0f3d3814;transform:translateY(-2px)}
+.doc .av{width:64px;height:64px;border-radius:50%;background:var(--mint);display:grid;place-items:center;font-weight:800;color:var(--brand);font-size:22px}
+.doc h3{margin:14px 0 4px}.doc p{color:var(--mute);margin-bottom:14px}.doc .fee{font-weight:700;margin-bottom:14px}
+.doc .btns{display:flex;gap:8px}.doc .btns .btn{flex:1}
+.app{display:grid;grid-template-columns:1fr 240px;min-height:100vh}
+.side{background:var(--side);color:#cfe3df;padding:32px 28px;grid-column:2;grid-row:1}
+.side h2{color:#fff;font-size:18px;margin-bottom:28px}
+.side a{display:block;padding:9px 12px;margin-bottom:2px;border-radius:10px;cursor:pointer}
+.side a:hover{background:#ffffff14}
+.side a.on{background:#ffffff1f;color:#fff;font-weight:700}
+.side a:focus-visible,.side button:focus-visible{outline:none}
+.side .out{margin-top:30px;background:none;border:0;color:#9fbfb9;cursor:pointer;padding:0}
+main{padding:36px 40px;grid-column:1;grid-row:1}
+main h1{font-size:30px;font-weight:800}
+.head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:24px}
+.head span{color:var(--mute)}
+.cols{display:grid;grid-template-columns:1.6fr 1fr;gap:28px;align-items:start}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;overflow-x:auto}
+.card h2{font-size:20px;margin-bottom:6px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 20px}
+.stat small{color:var(--mute)}.stat b{display:block;font-size:34px}
+table{width:100%;border-collapse:collapse}
+th{font-weight:600;color:var(--mute);font-size:13px;text-align:right;padding:8px 6px;border-bottom:1px solid var(--line)}
+td{padding:14px 6px;border-bottom:1px solid #f0f4f3}tr:last-child td{border:0}
+tbody tr:hover{background:#f6f8f7}
+td .btn{margin-inline-start:6px}
+td select{width:auto;padding:6px 10px;border-radius:10px}
+.badge{padding:4px 14px;border-radius:99px;font-size:13px;white-space:nowrap}
+.Pending{background:#fde9c8;color:#8a5a0a}.Confirmed{background:#d3eee3;color:#126048}
+.Completed{background:#e6e9e8;color:#444}.Cancelled{background:#f8dcdc;color:#8d2b2b}
+.empty{color:var(--mute);padding:28px 0;text-align:center}
+.auth{max-width:420px;margin:48px auto}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:12px 22px;border-radius:12px;display:none;z-index:9}
+.pager{display:flex;gap:10px;margin-top:16px;align-items:center}
+.tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}.chip.sm{padding:6px 14px;font-size:13px;background:#eef3f1}
+.chip.on{background:var(--brand);color:#fff}
+.why{padding-top:48px;padding-bottom:56px}.why h2{margin:0 0 24px;font-size:24px;text-align:center}.why .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.foot{text-align:center;color:var(--mute);padding:24px;border-top:1px solid var(--line)}
+.feat{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 6px 20px #0f3d380d}
+.feat .ico{width:52px;height:52px;border-radius:14px;background:var(--mint);color:var(--brand);display:grid;place-items:center;margin-bottom:14px}
+.feat h3{margin-bottom:6px}.feat p{color:var(--mute);line-height:1.7}
+
+/* حقلين في صف واحد */
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.row2>div{min-width:0}
+
+/* صفحات الدخول والتسجيل */
+.login-page-container{
+  display:flex;
+  align-items:flex-start;
+  min-height:calc(100vh - 70px);
+  width:100%;
+  direction:ltr; /* لضمان ثبات أماكن الصورة والفورم بغض النظر عن لغة الصفحة */
+}
+.login-form-side{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:30px;
+  background:#fcfcfc;
+  direction:rtl; /* لإرجاع الكتابة بالعربي داخل الفورم بشكل طبيعي */
+}
+.login-image-side{
+  flex:1;
+  position:sticky;
+  top:0;
+  align-self:flex-start;
+  height:calc(100vh - 70px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px;
+  direction:rtl;
+}
+.login-overlay{
+  background:rgba(0,0,0,.6);
+  color:#fff;
+  padding:30px;
+  border-radius:12px;
+  text-align:center;
+  max-width:400px;
+  backdrop-filter:blur(2px);
+}
+.login-overlay h2{font-size:26px;margin-bottom:10px}
+.login-overlay p{font-size:15px;line-height:1.6;opacity:.95}
+.compact-auth{
+  width:100%;
+  max-width:380px;
+  margin:0;
+  padding:20px 24px;
+  box-shadow:0 4px 20px rgba(0,0,0,.05);
+  border-radius:12px;
+}
+.compact-auth label{margin:10px 0 4px}
+.compact-auth input{padding:9px 12px}
+.compact-auth .btn.full{padding:11px}
+
+/* نماذج لوحة الأدمن (إنشاء مستخدم / تعديل مريض) */
+.newuser{max-width:640px;margin:0 0 20px}
+.newuser label{margin:10px 0 4px}
+.newuser input,.newuser select{padding:9px 12px}
+
+/* بحث */
+main input[type="search"],main .search{max-width:420px;margin-bottom:20px}
+
+/* موبايل وشاشات صغيرة */
+@media(max-width:860px){
+  .top,.hero,.wrap{padding-inline:20px}.top nav{display:none}
+  .hero{grid-template-columns:1fr}.hero h1{font-size:40px}.pic{height:200px}
+  .app{grid-template-columns:1fr}.side{grid-column:1;grid-row:1;padding:16px 20px}
+  .side h2{margin-bottom:8px}.side nav{display:flex;gap:16px;flex-wrap:wrap}
+  main{grid-column:1;grid-row:2;padding:24px 20px}
+  .cols{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}
+  .why .grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .login-page-container{flex-direction:column}
+  .login-image-side{display:none}
+}
+@media(max-width:560px){
+  .row2{grid-template-columns:1fr}
+}
