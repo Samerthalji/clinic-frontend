@@ -1,6 +1,6 @@
 // ===== الإعدادات =====
 export const API = 'https://localhost:7047/api' // رابط الباك إند
-export const DEMO = false // true = بيانات تجريبية بدون باك إند
+export const DEMO = 'true' // true = بيانات تجريبية بدون باك إند
 
 const h = n => new Date(Date.now() + n * 36e5).toISOString()
 const M = {
