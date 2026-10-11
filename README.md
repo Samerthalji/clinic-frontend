@@ -18,12 +18,10 @@ A clinic appointment management web app with an Arabic (RTL) interface and three
 <p>
   <img src="docs/screenshots/Home.png" width="49%" alt="Home" />
   <img src="docs/screenshots/Login.png" width="49%" alt="login" />
-    <img src="docs/screenshots/Register.png" width="49%" alt="login" />
-    <img src="docs/screenshots/Patient.png" width="49%" alt="login" />
-   <img src="docs/screenshots/Doctor.png" width="49%" alt="login" />
-   <img src="docs/screenshots/Admin.png" width="49%" alt="login" />
-</p>
-</p>
+    <img src="docs/screenshots/Register.png" width="49%" alt="Register" />
+    <img src="docs/screenshots/Patient.png" width="49%" alt="Patient" />
+   <img src="docs/screenshots/Doctor.png" width="49%" alt="Doctor" />
+   <img src="docs/screenshots/Admin.png" width="49%" alt="Admin" />
 </p>
 ## Tech Stack
 
