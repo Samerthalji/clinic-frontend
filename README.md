@@ -13,7 +13,18 @@ A clinic appointment management web app with an Arabic (RTL) interface and three
 - **Admins:** dashboard with stats, manage appointments, doctors, and patients, create users with roles.
 - JWT authentication with automatic token refresh and role-based route guards.
 - Responsive Arabic (RTL) UI.
+## Screenshots
 
+<p>
+  <img src="docs/screenshots/Home.png" width="49%" alt="Home" />
+  <img src="docs/screenshots/Login.png" width="49%" alt="login" />
+    <img src="docs/screenshots/Register.png" width="49%" alt="login" />
+    <img src="docs/screenshots/Patient.png" width="49%" alt="login" />
+   <img src="docs/screenshots/Doctor.png" width="49%" alt="login" />
+   <img src="docs/screenshots/Admin.png" width="49%" alt="login" />
+</p>
+</p>
+</p>
 ## Tech Stack
 
 - React 18 + Vite
