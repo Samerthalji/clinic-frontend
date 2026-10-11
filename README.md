@@ -61,6 +61,3 @@ VITE_DEMO=true
 The REST API (ASP.NET Core, Clean Architecture, JWT) lives in a separate repository: [clinic-backend](https://github.com/Samerthalji/clinic-backend).
 To use it, set `VITE_DEMO=false`, point `VITE_API_URL` to the API, and enable CORS for `http://localhost:5173`.
 
-## Screenshots
-
-_(add 3–4 screenshots here: login, patient dashboard, admin dashboard, create user)_
